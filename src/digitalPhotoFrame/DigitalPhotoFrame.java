@@ -2,7 +2,7 @@ package digitalPhotoFrame;
 
 public class DigitalPhotoFrame {
 
-    private int pictures = 0;
+    private volatile int pictures = 0;
     private static final int MAX_PICTURES = 150;
     private static final int MIN_PICTURES = 0;
 
