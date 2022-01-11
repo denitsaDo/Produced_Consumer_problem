@@ -7,15 +7,15 @@ public class Demo {
 
         Fridge fridge = new Fridge();
         Man man1 = new Man(fridge);
-        Man man2 = new Man(fridge);
+//        Man man2 = new Man(fridge);
         Woman w1 = new Woman(fridge);
-        Woman w2 = new Woman(fridge);
-        Woman w3 = new Woman(fridge);
+//        Woman w2 = new Woman(fridge);
+//        Woman w3 = new Woman(fridge);
 
         man1.start();
-        man2.start();
+//        man2.start();
         w1.start();
-        w2.start();
-        w3.start();
+//        w2.start();
+//        w3.start();
     }
 }

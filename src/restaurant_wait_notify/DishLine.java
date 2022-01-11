@@ -15,7 +15,7 @@ public class DishLine {
             }
         }
         dishes++;
-        notify();
+        notifyAll();
         System.out.println("Chef" + Thread.currentThread().getId() + " just prepared a dish. Total dishes are: " + dishes);
     }
     public synchronized void getDish() {
@@ -27,7 +27,7 @@ public class DishLine {
             }
         }
         dishes--;
-        notify();
+        notifyAll();
         System.out.println("Waiter" + Thread.currentThread().getId()+ " just carried away a dish. Total dishesh are: " + dishes);
     }
 }
