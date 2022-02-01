@@ -5,7 +5,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class Fridge {
 
-    private volatile BlockingQueue <Integer> bottles = new ArrayBlockingQueue<>(17);
+    private volatile BlockingQueue <Integer> bottles = new ArrayBlockingQueue<>(10);
 
     public void addBottleOfWine () {
         try {
